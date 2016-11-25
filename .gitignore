@@ -7,5 +7,6 @@
 .DS_Store
 .eggs
 .tox
+build/
 dist/
 docs/_build
