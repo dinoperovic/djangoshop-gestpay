@@ -5,9 +5,14 @@ from decimal import Decimal
 
 from django.utils.translation import ugettext_lazy as _
 from shop.modifiers.base import PaymentModifier
-from shop.rest.serializers import ExtraCartRow
 from shop_gestpay.payment import GestPayPayment
 from shop_gestpay.settings import COMMISION_PERCENTAGE, MODIFIER_CHOICE_TEXT
+
+try:
+    from shop.serializers.cart import ExtraCartRow
+except ImportError:
+    # Fallback to django-shop version 0.9.x.
+    from shop.rest.serializers import ExtraCartRow
 
 
 class GestPayPaymentModifier(PaymentModifier):
