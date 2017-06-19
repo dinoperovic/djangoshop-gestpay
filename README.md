@@ -44,6 +44,10 @@ SHOP_GESTPAY_ERROR_MESSAGE = None  # Message added to django messages framework 
 SHOP_GESTPAY_SUCCESS_MESSAGE = None  # Message added to django messages framework transaction is successful.
 ```
 
+## Changelog
+
+See [relase notes](https://github.com/dinoperovic/djangoshop-gestpay/releases).
+
 
 [django-shop]: https://github.com/awesto/django-shop
 [gestpypay]: https://github.com/giefferre/gestpypay
