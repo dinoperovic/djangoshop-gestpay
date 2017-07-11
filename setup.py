@@ -45,5 +45,4 @@ setup(
         'django-shop>=0.9.3',
         'gestpypay>=1.0.0',
     ],
-    setup_requires=['setuptools-markdown'],
 )

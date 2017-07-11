@@ -3,4 +3,4 @@ clean:
 	find . -name '*.pyc' -exec rm '{}' ';'
 
 sort:
-	isort -rc shopit tests
+	isort -rc shop_gestpay
